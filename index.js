@@ -48,14 +48,13 @@ function renderGame() {
     if (sum > 21) {
         gameEl.textContent = "You're out of the game! 😭"
         isAlive = false
-        console.log("You're out of the game! 😭")
     } else if (sum === 21) {
         gameEl.textContent = "You've got a blackjack! 🥹"
+        // Tells the code the user hit the blackjack by keeping a state
         hasBlackJack = true
-        console.log("You've got a blackjack! 🥹")
+
     } else {
         gameEl.textContent = "You're still safe! Would you like to draw another card? 👀"
-        console.log("You're still safe! Would you like to draw another card? 👀")
     }
 
     
